@@ -17,7 +17,7 @@ body{
 }
 
 .screen input{
-    background-color: #d9f0a4;
+    background-color: #f2f3ee;
     border-radius: 5px;
     margin-top: 10px;
    padding: 30px 70px;
@@ -25,16 +25,18 @@ body{
 }
 
 .buttons {
-    background-color: #323331;
-    margin-top: 10px;
+    background-color: #0c0c0c;
+    margin-top: 35px;
+    border-radius: 20px;
     height: 250px;
     display: grid;
     grid-template-columns: repeat(4, 4fr);
+    padding-bottom: 20px;
 }
 
 .button {
 
-    
+   
     
     font-size: 28px;
     padding: 15px;
@@ -46,7 +48,8 @@ body{
 }
 
 .number {
-    background-color: #f1eaab;
+    color: antiquewhite;
+    background-color: #5e5d5c;
     padding: 1px 2px;
     border-radius: 10px;
     font-size: 20px;
@@ -54,15 +57,17 @@ body{
 
 
 .clear {
-    background-color: #e2f382;
+    background-color: #2e2e2c;
+    color: antiquewhite;
     border-radius: 10px;
     font-size: 20px;
 }
 
 .equal {
-    background-color: #ada176;
+    background-color: #1f1e1e;
     border-radius: 10px;
     font-size: 20px;
+    color: rgb(212, 207, 207);
 }
 
 
@@ -70,6 +75,7 @@ body{
     
     background-color: #8a8982;
     border-radius: 10px;
+    color: antiquewhite;
     font-size: 20px;
 }
 .operators :hover{
