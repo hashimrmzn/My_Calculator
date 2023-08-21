@@ -1,6 +1,6 @@
 
 body{
-    background-color: rgb(248, 229, 201);
+    background-color: rgb(127, 126, 128);
     margin: 0; 
     padding: 0; 
 }
@@ -32,6 +32,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 4fr);
     padding-bottom: 20px;
+    padding: 20px 20px;
 }
 
 .button {
@@ -47,6 +48,8 @@ body{
 
 }
 
+
+
 .number {
     color: antiquewhite;
     background-color: #5e5d5c;
@@ -56,12 +59,23 @@ body{
 }
 
 
+.number:hover {
+    background-color: #857f7f;
+    color: rgb(10, 10, 10);
+  }
+
 .clear {
     background-color: #2e2e2c;
     color: antiquewhite;
     border-radius: 10px;
     font-size: 20px;
 }
+
+.clear:hover {
+    background-color: #969292;
+    color: rgb(10, 10, 10);
+  }
+
 
 .equal {
     background-color: #1f1e1e;
@@ -71,6 +85,13 @@ body{
 }
 
 
+.equal:hover {
+    background-color: #969292;
+    color: rgb(10, 10, 10);
+  }
+
+
+
 .operators {
     
     background-color: #8a8982;
@@ -78,4 +99,9 @@ body{
     color: antiquewhite;
     font-size: 20px;
 }
+
+.operators:hover {
+    background-color: #a79f9f;
+    color: rgb(10, 10, 10);
+  }
 
