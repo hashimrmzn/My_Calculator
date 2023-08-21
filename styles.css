@@ -27,7 +27,7 @@ body{
 .buttons {
     background-color: #0c0c0c;
     margin-top: 35px;
-    border-radius: 20px;
+     border-radius: 20px;
     height: 250px;
     display: grid;
     grid-template-columns: repeat(4, 4fr);
@@ -78,6 +78,4 @@ body{
     color: antiquewhite;
     font-size: 20px;
 }
-.operators :hover{
-    color: aliceblue;
-}
+

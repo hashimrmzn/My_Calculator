@@ -5,8 +5,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentInput = "";
     let prevInput = "";
     let operator = "";
+    function updateScreen() {
+        screen.value = currentInput;
+    }
 
-    
+    function clear() {
+        currentInput = "";
+        prevInput = "";
+        operator = "";
+    }
 
     function calculate() {
         if (prevInput !== "" && currentInput !== "") {
