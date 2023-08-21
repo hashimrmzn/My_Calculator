@@ -5,8 +5,42 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentInput = "";
     let prevInput = "";
     let operator = "";
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            const buttonText = button.textContent;
+
+            if (button.classList.contains("number")) {
+                currentInput += buttonText;
+                updateScreen();
+            } else if (button.classList.contains("operators")) {
+                if (currentInput !== "") {
+                    prevInput = currentInput;
+                    currentInput = "";
+                    operator = buttonText;
+                    updateScreen();
+                }
+            } else if (button.classList.contains("clear")) {
+                clear();
+                updateScreen();
+            } else if (button.classList.contains("equal")) {
+                try {
+                    calculate();
+                    updateScreen();
+                } catch (error) {
+                    currentInput = "Error";
+                    updateScreen();
+                }
+            }
+        });
+    });
+
     function updateScreen() {
-        screen.value = currentInput;
+        if (operator !== "") {
+            screen.value = prevInput + " " + operator + " " + currentInput;
+        } else {
+            screen.value = currentInput;
+        }
     }
 
     function clear() {
